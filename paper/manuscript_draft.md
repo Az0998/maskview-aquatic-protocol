@@ -6,6 +6,9 @@
 **Affiliation:** ¹ Lanzhou University, Lanzhou 730000, Gansu, China  
 **Correspondence:** 3079099853@qq.com  
 **Code:** https://github.com/Az0998/maskview-aquatic-protocol  
+**Word manuscript (IWA/JHI):** `paper/JHI_MaskView_protocol_manuscript.docx`  
+**Cover letter:** `paper/cover_letter_jhi.txt`  
+**Highlights:** `paper/highlights.txt`  
 
 ---
 

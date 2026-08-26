@@ -7,5 +7,4 @@
 | A3 | dual-media pattern schematic | `fig_maskview_pattern_bank.png` |
 | A4 | Abstract + Intro + Results draft | `paper/manuscript_draft.md` |
 
-Next writing: IWA template, 25–35 references, English polish.  
-Optional experiment: true column-wise linear interpolation on the oxygen cube (distinct from persistence/climatology).
+Next: submit `paper/JHI_MaskView_protocol_manuscript.docx` via IWA Editorial Manager; confirm APC/waiver. Optional: true column-wise linear interpolation on the oxygen cube.

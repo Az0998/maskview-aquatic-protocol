@@ -41,7 +41,7 @@ Full training code remains in the experiment archives (`water-ai-do-forecast`, `
 python scripts/freeze_ocean_baselines.py   # optional; needs sibling ocean-do-forecast
 python scripts/build_cross_domain_tables.py
 python scripts/plot_rank_reversal.py
-python scripts/plot_pattern_bank.py
+python scripts/build_jhi_docx.py
 ```
 
 ## License

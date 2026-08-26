@@ -1,0 +1,5 @@
+• A shared Mask-View bank maps lake station failures onto shelf-oxygen (Argo-column) masks.
+• On Dianchi, linear interpolation wins short gaps (MAE 0.16–0.26) and collapses under sensor/station outages (~0.68).
+• On the East China Sea shelf, a Transformer is best at lead-1 when history is dense (3.88 µmol kg−1) but is taxed +10–35% under operational masks.
+• Persistence and climatology are invariant to oxygen-history sparsity; lead-2 skill reverts to climatology except for block_time.
+• The scientific object is winner identity by missingness protocol, not a new universal architecture.
