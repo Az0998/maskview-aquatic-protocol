@@ -24,12 +24,12 @@ This repository is standalone. Numbers come from `data/frozen/`.
 | argo | ocean_ecs | lead1_RMSE_umolkg | 5.241 | st_transformer | climatology | 0.667 | 0.352 | True |
 
 ## Shared patterns
-| pattern | lake_winner | lake_recipe_beats_Linear | ocean_lead1_best | ocean_lead2_best | ocean_lead1_degradation |
-| --- | --- | --- | --- | --- | --- |
-| point | Linear | False | st_transformer | climatology | 0.294 |
-| block_time | Linear | False | st_transformer | hybrid_clim_st | 0.102 |
-| sensor | BRITS | True | st_transformer | climatology | 0.309 |
-| station | BRITS | True | st_transformer | climatology | 0.35 |
-| mixed | Linear | False | st_transformer | climatology | 0.308 |
+| pattern | lake_winner | lake_recipe_beats_Linear | ocean_lead1_best | ocean_lead2_best | ocean_lead1_degradation | ocean_persist_RMSE | ocean_clim_RMSE | ocean_ST_RMSE | ocean_ST_beats_clim |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| point | Linear | False | st_transformer | climatology | 0.294 | 8.265 | 5.298 | 5.016 | True |
+| block_time | Linear | False | st_transformer | hybrid_clim_st | 0.102 | 8.265 | 5.298 | 4.273 | True |
+| sensor | BRITS | True | st_transformer | climatology | 0.309 | 8.265 | 5.298 | 5.075 | True |
+| station | BRITS | True | st_transformer | climatology | 0.35 | 8.265 | 5.298 | 5.232 | True |
+| mixed | Linear | False | st_transformer | climatology | 0.308 | 8.265 | 5.298 | 5.071 | True |
 
 Do not compare MAE to µmol kg⁻¹. Compare **who wins**.

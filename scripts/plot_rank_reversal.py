@@ -4,6 +4,7 @@ from __future__ import annotations
 from pathlib import Path
 
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -32,11 +33,29 @@ def main() -> None:
     axes[0].set_ylim(0, 0.85)
 
     O = ocean.set_index("pattern")
+    simple_path = TABLES.parent.parent / "data" / "frozen" / "ocean" / "ocean_simple_vs_learned.csv"
     pats = [p for p in ["none", "point", "block_time", "sensor", "station", "argo"] if p in O.index]
-    axes[1].bar(pats, O.loc[pats, "ST_RMSE"], color="#1f6f8b")
+    if simple_path.exists():
+        s = pd.read_csv(simple_path)
+        s1 = s[s["lead"] == 1]
+        x = range(len(pats))
+        w = 0.25
+        def col(model):
+            vals = []
+            for p in pats:
+                sub = s1[(s1.pattern == p) & (s1.model == model)]
+                vals.append(float(sub.RMSE.iloc[0]) if not sub.empty else np.nan)
+            return vals
+        axes[1].bar([i - w for i in x], col("persistence"), w, label="persistence", color="#6b7c85")
+        axes[1].bar(list(x), col("climatology"), w, label="climatology", color="#b45309")
+        axes[1].bar([i + w for i in x], col("st_transformer"), w, label="ST Transformer", color="#1f6f8b")
+        axes[1].set_xticks(list(x), pats, rotation=20)
+        axes[1].legend(frameon=False, fontsize=8)
+    else:
+        axes[1].bar(pats, O.loc[pats, "ST_RMSE"], color="#1f6f8b")
+        axes[1].tick_params(axis="x", rotation=20)
     axes[1].set_ylabel(r"Lead-1 RMSE ($\mu$mol kg$^{-1}$)")
-    axes[1].set_title("ECS oxygen (ST Transformer)")
-    axes[1].tick_params(axis="x", rotation=20)
+    axes[1].set_title("ECS oxygen forecast")
 
     fig.suptitle("Mask-View protocol — ranking depends on missingness", fontsize=11)
     FIGURES.mkdir(parents=True, exist_ok=True)

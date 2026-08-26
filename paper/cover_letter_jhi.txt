@@ -1,0 +1,14 @@
+Dear Editor,
+
+Please consider our manuscript
+“Operational missingness reverses method rankings in aquatic monitoring networks: a Mask-View protocol on a lake station grid and a shelf oxygen cube”
+for publication in Journal of Hydroinformatics.
+
+We submit a missingness protocol, not a new sequence architecture. Automatic stations and Argo-like profiles fail as blocks, dropped parameters and column blackouts; MCAR-only benchmarks over-rank linear interpolators and dense-history deep models. Using one pattern bank on Dianchi automatic stations and an East China Sea oxygen cube, we show that winner identity flips or erodes under operational masks. A 2025 Ecological Informatics tensor study already reconstructs Dianchi under random/gap missingness; we ask a different question—whether ranking is protocol-dependent—and add a second medium.
+
+The work fits Hydroinformatics’ data-driven modelling and water-quality informatics scope. Code and frozen tables: https://github.com/Az0998/maskview-aquatic-protocol.
+
+Sincerely,
+Senjie Zhang
+Lanzhou University
+3079099853@qq.com

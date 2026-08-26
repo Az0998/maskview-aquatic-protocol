@@ -31,6 +31,19 @@ docs/            GitHub Pages
 
 Full training code remains in the experiment archives (`water-ai-do-forecast`, `ocean-do-forecast`) if you need to regenerate the frozen files. This repo is what you submit as the paper’s open synthesis.
 
+## Manuscript
+
+- Draft: `paper/manuscript_draft.md`
+- Cover letter: `paper/cover_letter_jhi.txt`
+- Figures: `results/figures/fig_maskview_pattern_bank.png`, `fig_rank_reversal_two_media.png`
+
+```bash
+python scripts/freeze_ocean_baselines.py   # optional; needs sibling ocean-do-forecast
+python scripts/build_cross_domain_tables.py
+python scripts/plot_rank_reversal.py
+python scripts/plot_pattern_bank.py
+```
+
 ## License
 
 MIT

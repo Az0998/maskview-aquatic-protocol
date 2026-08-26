@@ -1,12 +1,11 @@
-# Paper A — remaining experiments (in sibling repos)
+# Paper A status
 
-Already done here: rank-reversal tables + two-panel figure from locked results.
+| ID | Item | Status |
+|----|------|--------|
+| A1 | spatial_plus_l0 on lake panel | done |
+| A2 | ocean persist/clim vs ST (frozen CSV) | done — clim/persist invariant to mask; ST taxed |
+| A3 | dual-media pattern schematic | `fig_maskview_pattern_bank.png` |
+| A4 | Abstract + Intro + Results draft | `paper/manuscript_draft.md` |
 
-| ID | Experiment | Where | Why |
-|----|------------|-------|-----|
-| A1 | Same lake figure with `spatial_plus_l0` as learned model | `water-ai-do-forecast` ablation CSVs | Paper should use the recommended recipe, not only default MaskView-ST |
-| A2 | Ocean: score **Linear/persistence interpolation of sparse columns** as lake-analog simple baseline | `ocean-do-forecast` | Completes “simple vs learned” on both media |
-| A3 | One shared schematic of the pattern bank (already have lake schematic; add ocean columns) | this repo `results/figures` | JHI Figure 1 |
-| A4 | English Abstract + Introduction draft citing EcoInf 2025 NTF | `paper/` | Next writing block |
-
-Do not start Paper B figures until A1–A3 are in the folder.
+Next writing: IWA template, 25–35 references, English polish.  
+Optional experiment: true column-wise linear interpolation on the oxygen cube (distinct from persistence/climatology).

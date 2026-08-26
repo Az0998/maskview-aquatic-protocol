@@ -78,12 +78,24 @@ def ocean_winners() -> pd.DataFrame:
 
 def rank_reversal(lake: pd.DataFrame, ocean: pd.DataFrame) -> pd.DataFrame:
     o = ocean.set_index("pattern")
+    simple = None
+    simple_path = OCEAN / "ocean_simple_vs_learned.csv"
+    if simple_path.exists():
+        simple = pd.read_csv(simple_path)
+        s1 = simple[(simple["lead"] == 1)]
     rows = []
     for _, r in lake.iterrows():
         pat = r["pattern"]
         if pat not in o.index:
             continue
         oc = o.loc[pat]
+        persist = clim = st = None
+        if simple is not None:
+            sub = s1[s1["pattern"] == pat]
+            if not sub.empty:
+                persist = float(sub.loc[sub.model == "persistence", "RMSE"].iloc[0]) if (sub.model == "persistence").any() else None
+                clim = float(sub.loc[sub.model == "climatology", "RMSE"].iloc[0]) if (sub.model == "climatology").any() else None
+                st = float(sub.loc[sub.model == "st_transformer", "RMSE"].iloc[0]) if (sub.model == "st_transformer").any() else None
         rows.append(
             {
                 "pattern": pat,
@@ -92,6 +104,10 @@ def rank_reversal(lake: pd.DataFrame, ocean: pd.DataFrame) -> pd.DataFrame:
                 "ocean_lead1_best": oc["lead1_best"],
                 "ocean_lead2_best": oc["lead2_best"],
                 "ocean_lead1_degradation": oc["degradation_vs_dense"],
+                "ocean_persist_RMSE": persist,
+                "ocean_clim_RMSE": clim,
+                "ocean_ST_RMSE": st,
+                "ocean_ST_beats_clim": (st is not None and clim is not None and st < clim),
             }
         )
     return pd.DataFrame(rows)
