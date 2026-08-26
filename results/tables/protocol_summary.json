@@ -1,0 +1,29 @@
+{
+  "standalone": true,
+  "claim": "ranking is protocol-dependent across two aquatic media",
+  "lake_setting_wins": {
+    "Linear": 9,
+    "BRITS": 5,
+    "MaskView-ST": 1
+  },
+  "lake_overall_MAE": {
+    "MaskView-ST": 0.38843146165211995,
+    "Linear": 0.4105682631333669,
+    "BRITS": 0.4338062385718028,
+    "LOCF": 0.4339352975289027,
+    "SAITS": 0.44688717524210614,
+    "GRIN*": 0.4591267605622609,
+    "Mean": 0.6830269972483317
+  },
+  "spatial_plus_l0_overall_MAE": 0.3805047571659088,
+  "shared_patterns": [
+    "point",
+    "block_time",
+    "sensor",
+    "station",
+    "mixed"
+  ],
+  "ocean_dense_lead1_ST_RMSE": 3.876,
+  "ocean_argo_lead1_ST_RMSE": 5.241,
+  "data": "data/frozen (no sibling checkout required)"
+}

@@ -1,0 +1,9 @@
+pattern,medium,metric,ST_RMSE,lead1_best,lead2_best,lead1_F1,degradation_vs_dense,lead2_falls_to_climatology
+none,ocean_ecs,lead1_RMSE_umolkg,3.876,st_transformer,hybrid_clim_st,0.741,0.0,False
+point,ocean_ecs,lead1_RMSE_umolkg,5.016,st_transformer,climatology,0.692,0.294,True
+block,ocean_ecs,lead1_RMSE_umolkg,4.994,st_transformer,climatology,0.683,0.289,True
+block_time,ocean_ecs,lead1_RMSE_umolkg,4.273,st_transformer,hybrid_clim_st,0.72,0.102,False
+sensor,ocean_ecs,lead1_RMSE_umolkg,5.075,st_transformer,climatology,0.693,0.309,True
+station,ocean_ecs,lead1_RMSE_umolkg,5.232,st_transformer,climatology,0.674,0.35,True
+mixed,ocean_ecs,lead1_RMSE_umolkg,5.071,st_transformer,climatology,0.68,0.308,True
+argo,ocean_ecs,lead1_RMSE_umolkg,5.241,st_transformer,climatology,0.667,0.352,True

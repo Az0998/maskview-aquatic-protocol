@@ -1,0 +1,6 @@
+pattern,medium,metric,simple_Linear,learned_MaskViewST,recipe_spatial_plus_l0,BRITS,winner_default_grid,learned_beats_Linear,recipe_beats_Linear
+point,lake_dianchi,std_MAE,0.1611,0.2969,0.2946,0.4295,Linear,False,False
+block_time,lake_dianchi,std_MAE,0.2538,0.3261,0.3131,0.4417,Linear,False,False
+sensor,lake_dianchi,std_MAE,0.6957,0.4413,0.4209,0.4302,BRITS,True,True
+station,lake_dianchi,std_MAE,0.6786,0.5386,0.5399,0.4345,BRITS,True,True
+mixed,lake_dianchi,std_MAE,0.2636,0.3392,0.334,0.4332,Linear,False,False
