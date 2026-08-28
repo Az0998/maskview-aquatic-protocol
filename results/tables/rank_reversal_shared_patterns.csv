@@ -1,6 +1,6 @@
-pattern,lake_winner,lake_recipe_beats_Linear,ocean_lead1_best,ocean_lead2_best,ocean_lead1_degradation,ocean_persist_RMSE,ocean_clim_RMSE,ocean_ST_RMSE,ocean_ST_beats_clim
-point,Linear,False,st_transformer,climatology,0.294,8.265,5.298,5.016,True
-block_time,Linear,False,st_transformer,hybrid_clim_st,0.102,8.265,5.298,4.273,True
-sensor,BRITS,True,st_transformer,climatology,0.309,8.265,5.298,5.075,True
-station,BRITS,True,st_transformer,climatology,0.35,8.265,5.298,5.232,True
-mixed,Linear,False,st_transformer,climatology,0.308,8.265,5.298,5.071,True
+pattern,lake_winner,lake_recipe_beats_Linear,ocean_lead1_best,ocean_lead2_best,ocean_lead1_degradation,ocean_persist_unmasked_RMSE,ocean_persist_locf_RMSE,ocean_clim_RMSE,ocean_ST_RMSE,ocean_ST_beats_clim
+point,Linear,False,st_transformer,climatology,0.294,8.265,6.176,5.298,5.016,True
+block_time,Linear,False,st_transformer,hybrid_clim_st,0.102,8.265,10.049,5.298,4.273,True
+sensor,BRITS,True,st_transformer,climatology,0.309,8.265,5.99,5.298,5.075,True
+station,BRITS,True,st_transformer,climatology,0.35,8.265,5.599,5.298,5.232,True
+mixed,Linear,False,st_transformer,climatology,0.308,8.265,6.006,5.298,5.071,True

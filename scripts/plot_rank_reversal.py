@@ -33,7 +33,7 @@ def main() -> None:
     axes[0].set_ylim(0, 0.85)
 
     O = ocean.set_index("pattern")
-    simple_path = TABLES.parent.parent / "data" / "frozen" / "ocean" / "ocean_simple_vs_learned.csv"
+    simple_path = TABLES.parent.parent / "data" / "frozen" / "ocean" / "fair_sparse_baselines.csv"
     pats = [p for p in ["none", "point", "block_time", "sensor", "station", "argo"] if p in O.index]
     if simple_path.exists():
         s = pd.read_csv(simple_path)
@@ -46,7 +46,7 @@ def main() -> None:
                 sub = s1[(s1.pattern == p) & (s1.model == model)]
                 vals.append(float(sub.RMSE.iloc[0]) if not sub.empty else np.nan)
             return vals
-        axes[1].bar([i - w for i in x], col("persistence"), w, label="persistence", color="#6b7c85")
+        axes[1].bar([i - w for i in x], col("persist_locf"), w, label="persist (masked LOCF)", color="#6b7c85")
         axes[1].bar(list(x), col("climatology"), w, label="climatology", color="#b45309")
         axes[1].bar([i + w for i in x], col("st_transformer"), w, label="ST Transformer", color="#1f6f8b")
         axes[1].set_xticks(list(x), pats, rotation=20)

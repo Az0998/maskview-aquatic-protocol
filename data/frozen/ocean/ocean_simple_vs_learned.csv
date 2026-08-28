@@ -7,6 +7,10 @@ none,persistence,2,14.815,0.357,0.217
 none,climatology,2,5.228,0.719,0.561
 none,st_transformer,2,5.832,0.701,0.54
 none,hybrid_clim_st,2,5.083,0.742,0.59
+none,persistence,3,20.319,0.235,0.133
+none,climatology,3,5.206,0.7,0.539
+none,st_transformer,3,9.81,0.537,0.367
+none,hybrid_clim_st,3,5.222,0.703,0.542
 point,persistence,1,8.265,0.6,0.429
 point,climatology,1,5.298,0.671,0.505
 point,st_transformer,1,5.016,0.692,0.529
@@ -15,6 +19,10 @@ point,persistence,2,14.815,0.357,0.217
 point,climatology,2,5.228,0.719,0.561
 point,st_transformer,2,6.248,0.683,0.519
 point,hybrid_clim_st,2,5.229,0.732,0.578
+point,persistence,3,20.319,0.235,0.133
+point,climatology,3,5.206,0.7,0.539
+point,st_transformer,3,9.959,0.528,0.359
+point,hybrid_clim_st,3,5.238,0.702,0.541
 block,persistence,1,8.265,0.6,0.429
 block,climatology,1,5.298,0.671,0.505
 block,st_transformer,1,4.994,0.683,0.518
@@ -23,6 +31,10 @@ block,persistence,2,14.815,0.357,0.217
 block,climatology,2,5.228,0.719,0.561
 block,st_transformer,2,6.268,0.702,0.541
 block,hybrid_clim_st,2,5.229,0.728,0.573
+block,persistence,3,20.319,0.235,0.133
+block,climatology,3,5.206,0.7,0.539
+block,st_transformer,3,9.954,0.53,0.361
+block,hybrid_clim_st,3,5.238,0.701,0.54
 block_time,persistence,1,8.265,0.6,0.429
 block_time,climatology,1,5.298,0.671,0.505
 block_time,st_transformer,1,4.273,0.72,0.563
@@ -31,6 +43,10 @@ block_time,persistence,2,14.815,0.357,0.217
 block_time,climatology,2,5.228,0.719,0.561
 block_time,st_transformer,2,5.858,0.698,0.536
 block_time,hybrid_clim_st,2,5.094,0.74,0.588
+block_time,persistence,3,20.319,0.235,0.133
+block_time,climatology,3,5.206,0.7,0.539
+block_time,st_transformer,3,9.885,0.529,0.36
+block_time,hybrid_clim_st,3,5.225,0.702,0.541
 sensor,persistence,1,8.265,0.6,0.429
 sensor,climatology,1,5.298,0.671,0.505
 sensor,st_transformer,1,5.075,0.693,0.53
@@ -39,6 +55,10 @@ sensor,persistence,2,14.815,0.357,0.217
 sensor,climatology,2,5.228,0.719,0.561
 sensor,st_transformer,2,6.252,0.692,0.528
 sensor,hybrid_clim_st,2,5.232,0.73,0.575
+sensor,persistence,3,20.319,0.235,0.133
+sensor,climatology,3,5.206,0.7,0.539
+sensor,st_transformer,3,10.002,0.526,0.357
+sensor,hybrid_clim_st,3,5.24,0.701,0.539
 station,persistence,1,8.265,0.6,0.429
 station,climatology,1,5.298,0.671,0.505
 station,st_transformer,1,5.232,0.674,0.508
@@ -47,6 +67,10 @@ station,persistence,2,14.815,0.357,0.217
 station,climatology,2,5.228,0.719,0.561
 station,st_transformer,2,6.32,0.688,0.525
 station,hybrid_clim_st,2,5.233,0.72,0.563
+station,persistence,3,20.319,0.235,0.133
+station,climatology,3,5.206,0.7,0.539
+station,st_transformer,3,9.944,0.531,0.361
+station,hybrid_clim_st,3,5.241,0.701,0.54
 mixed,persistence,1,8.265,0.6,0.429
 mixed,climatology,1,5.298,0.671,0.505
 mixed,st_transformer,1,5.071,0.68,0.515
@@ -55,6 +79,10 @@ mixed,persistence,2,14.815,0.357,0.217
 mixed,climatology,2,5.228,0.719,0.561
 mixed,st_transformer,2,6.259,0.688,0.525
 mixed,hybrid_clim_st,2,5.233,0.731,0.576
+mixed,persistence,3,20.319,0.235,0.133
+mixed,climatology,3,5.206,0.7,0.539
+mixed,st_transformer,3,9.934,0.533,0.363
+mixed,hybrid_clim_st,3,5.239,0.702,0.54
 argo,persistence,1,8.265,0.6,0.429
 argo,climatology,1,5.298,0.671,0.505
 argo,st_transformer,1,5.241,0.667,0.5
@@ -63,3 +91,7 @@ argo,persistence,2,14.815,0.357,0.217
 argo,climatology,2,5.228,0.719,0.561
 argo,st_transformer,2,6.309,0.685,0.521
 argo,hybrid_clim_st,2,5.232,0.719,0.562
+argo,persistence,3,20.319,0.235,0.133
+argo,climatology,3,5.206,0.7,0.539
+argo,st_transformer,3,9.928,0.534,0.365
+argo,hybrid_clim_st,3,5.241,0.701,0.54

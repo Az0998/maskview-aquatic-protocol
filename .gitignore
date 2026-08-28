@@ -7,3 +7,4 @@ venv/
 ~$*
 *.tmp
 .ipynb_checkpoints/
+paper/_docx_extract.txt

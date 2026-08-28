@@ -34,14 +34,20 @@ Full training code remains in the experiment archives (`water-ai-do-forecast`, `
 ## Manuscript
 
 - Draft: `paper/manuscript_draft.md`
-- Cover letter: `paper/cover_letter_jhi.txt`
-- Figures: `results/figures/fig_maskview_pattern_bank.png`, `fig_rank_reversal_two_media.png`
+- Word (IWA): `paper/JHI_MaskView_protocol_manuscript.docx`
+- Cover letter: `paper/cover_letter_jhi.docx` (`cover_letter_jhi.txt`)
+- Highlights: `paper/highlights.txt`
+- Upload checklist: `paper/SUBMISSION.md`
+- Figures: `paper/figures/` (same files as `results/figures/`)
 
 ```bash
-python scripts/freeze_ocean_baselines.py   # optional; needs sibling ocean-do-forecast
 python scripts/build_cross_domain_tables.py
 python scripts/plot_rank_reversal.py
+python scripts/plot_keep_ratio_tax.py
 python scripts/build_jhi_docx.py
+# optional, needs sibling ocean-do-forecast + physics cube:
+#   python ../ocean-do-forecast/scripts/eval_fair_sparse_baselines.py
+#   python scripts/freeze_ocean_baselines.py
 ```
 
 ## License
