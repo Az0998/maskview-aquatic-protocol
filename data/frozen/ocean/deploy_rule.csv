@@ -1,0 +1,9 @@
+pattern,keep_frac,lead1_deploy,lead1_ST_RMSE,lead1_clim_RMSE,lead1_hypoxia_F1_ST,lead2_deploy,lead2_best_frozen,lead2_hypoxia_F1_ST,lead2_hypoxia_F1_clim,lead2_warning_prefers_climatology
+none,1.0,Transformer,3.876,5.298,0.741,hybrid/climatology,hybrid_clim_st,0.701,0.719,False
+point,0.249,Transformer,5.016,5.298,0.692,climatology,climatology,0.683,0.719,True
+block,0.267,Transformer,4.994,5.298,0.683,climatology,climatology,0.702,0.719,True
+block_time,0.45,Transformer,4.273,5.298,0.72,hybrid,hybrid_clim_st,0.698,0.719,False
+sensor,0.2,Transformer,5.075,5.298,0.693,climatology,climatology,0.692,0.719,True
+station,0.089,Transformer,5.232,5.298,0.674,climatology,climatology,0.688,0.719,True
+mixed,0.205,Transformer,5.071,5.298,0.68,climatology,climatology,0.688,0.719,True
+argo,0.078,Transformer,5.241,5.298,0.667,climatology,climatology,0.685,0.719,True

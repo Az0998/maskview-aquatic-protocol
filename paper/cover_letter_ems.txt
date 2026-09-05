@@ -1,0 +1,20 @@
+Dear Editor,
+
+Please consider the enclosed Research Article
+“An interpolability certificate for aquatic monitoring: when linear interpolation is admissible, and when the wrong mask changes hypoxia and nutrient warnings”
+for publication in Environmental Modelling & Software. The manuscript is original, has not been published, and is not under consideration elsewhere.
+
+The modelling need is a decision rule, not another reconstructor. Automatic stations and biogeochemical profiles fail as downtime slabs, dead channels, and whole-station or profile-column blackouts. On the open Dianchi automatic-station release, 96.9% of naturally missing cells occur while the entire station is silent. Reconstruction tables that hide only random cells or week-long gaps, including Wu et al. (2025) on the same lake, remain interpolable by construction and therefore recommend linear interpolation in a regime that is not the dominant operational failure.
+
+We compute an interpolability certificate ρ from the mask alone: a hidden cell is interpolable if the same station–variable still has an observed neighbour in the evaluation window. On 15 Mask-View settings, ρ ≥ 0.5 matches a Linear win on the frozen 105-grid exactly. Point and block-time have ρ ≈ 1; sensor and station have ρ = 0. The Wu et al. random and week-gap banks have ρ ≥ 0.998, which is why Linear wins all eight of those settings.
+
+The certificate changes an operational decision. If Linear is deployed because an MCAR or week-gap table said so, DO-drop and TN-exceedance warnings on the cells that were actually hidden have CSI = 0 under sensor and station masks. BRITS recovers TN CSI to 0.72 (sensor) and 0.74 (station). On point holes, Linear remains the warning champion. On a shelf oxygen cube, a Transformer remains first at one-month lead, but lead-2 hypoxia F1 prefers climatology except under block-time gaps.
+
+The manuscript includes a Software availability box. Frozen tables rebuild every figure without a GPU: https://github.com/Az0998/maskview-aquatic-protocol (MIT). Dianchi data: https://huggingface.co/datasets/anonymous-dianchi-2026/dianchi-water (CC BY 4.0).
+
+Enclosed: manuscript (Word), highlights, graphical abstract, cover letter, and three manuscript figures.
+
+Sincerely,
+Senjie Zhang
+Lanzhou University
+3079099853@qq.com

@@ -1,5 +1,5 @@
-• A shared Mask-View bank maps lake station failures onto shelf-oxygen (Argo-column) masks.
-• On Dianchi, 96.9% of naturally missing cells occur during full-station silence; isolated holes are 0.6%.
-• Linear interpolation wins EcoInf random/week-gap banks and year-shift outage replay, but MAE doubles versus MCAR at the same hide rate; it collapses only under Mask-View sensor/station windows.
-• On the East China Sea shelf, a Transformer is best at lead-1 when history is dense (3.88 µmol kg−1) but is taxed as voxel keep falls; default station/section margins of ~0.06 over climatology reflect ~8–9% keep more than column geometry, and a paired bootstrap still excludes zero.
-• The scientific object is winner identity by missingness protocol, not a new universal architecture.
+Mask-only ρ marks Linear admissible on 15/15 Dianchi settings.
+Wu et al. 2025 random and week-gap banks remain interpolable (ρ ≥ 0.998).
+Linear warning CSI is 0 under sensor/station; BRITS recovers TN CSI ≥ 0.72.
+On point holes Linear still wins DO-drop CSI (0.80 versus BRITS 0.69).
+Lead-2 hypoxia F1 prefers climatology except under block-time gaps.

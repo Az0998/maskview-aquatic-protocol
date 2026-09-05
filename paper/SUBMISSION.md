@@ -1,43 +1,40 @@
-# JHI upload pack
+# Final EMS upload checklist (1 Sep 2026)
 
-IWA *Journal of Hydroinformatics* · Research paper  
-Upload at the IWA online submission system. Do not mention prior rejections.
+**Journal:** *Environmental Modelling & Software*  
+**Portal:** https://www.editorialmanager.com/envsoft/  
+**Article type:** Research Article  
+**Rebuild:** `py -3.12 scripts/plot_pattern_bank.py` then `plot_rank_reversal.py`, `plot_keep_ratio_tax.py`, `plot_graphical_abstract.py`, `build_ems_docx.py`
 
-## Ready files (this folder)
+## Files to upload
 
-Copy these into the journal portal:
+| Item | File |
+|---|---|
+| Manuscript | `paper/EMS_interpolability_certificate_manuscript.docx` |
+| Cover letter | `paper/cover_letter_ems.docx` |
+| Highlights (required, 3–5 × ≤85 chars) | `paper/highlights.docx` and `paper/highlights.txt` |
+| Graphical abstract (encouraged, ≥531×1328 px) | `paper/figures/graphical_abstract.png` |
+| Fig. 1 | `paper/figures/fig_maskview_pattern_bank.png` |
+| Fig. 2 | `paper/figures/fig_keep_ratio_tax.png` |
+| Fig. 3 | `paper/figures/fig_rank_reversal_two_media.png` |
 
-| Portal field | File |
-|--------------|------|
-| Manuscript | `JHI_MaskView_protocol_manuscript.docx` |
-| Cover letter | `cover_letter_jhi.docx` (text twin: `cover_letter_jhi.txt`) |
-| Highlights (if asked) | `highlights.txt` |
-| Figure 1 | `figures/fig_maskview_pattern_bank.png` |
-| Figure 2 | `figures/fig_keep_ratio_tax.png` |
-| Figure 3 | `figures/fig_rank_reversal_two_media.png` |
+Do **not** upload `ECOINF_MaskView_protocol_manuscript.docx`, `JHI_MaskView_protocol_manuscript.docx`, or any letter that mentions a prior rejection.
 
-Figures are already embedded in the Word file. Upload the PNGs again only if the portal requires separate artwork.
+## Portal fields (typical)
 
-## Portal metadata
+- Title: An interpolability certificate for aquatic monitoring: when linear interpolation is admissible, and when the wrong mask changes hypoxia and nutrient warnings
+- Short title: Interpolability certificate for aquatic missingness
+- Authors: Senjie Zhang (corresponding), Lanzhou University, 3079099853@qq.com
+- Abstract: paste from the Word Abstract (single paragraph OK)
+- Keywords: interpolability; missing data; dissolved oxygen; early warning; aquatic monitoring; Mask-View
+- Funding: none
+- Competing interests: none
+- Data availability: GitHub + Hugging Face CC BY 4.0 (see manuscript)
+- Suggested reviewers: leave blank unless you have names
 
-- **Title:** Operational missingness reverses method rankings in aquatic monitoring networks: a Mask-View protocol on a lake station grid and a shelf oxygen cube
-- **Article type:** Research paper
-- **Author:** Senjie Zhang (corresponding)
-- **Affiliation:** Lanzhou University, Lanzhou 730000, Gansu, China
-- **Email:** 3079099853@qq.com (use an institutional address if you have one)
-- **Keywords:** missing data; water quality; dissolved oxygen; graph neural network; hydroinformatics; Mask-View; automatic monitoring; East China Sea; Dianchi Lake
-- **Data:** https://github.com/Az0998/maskview-aquatic-protocol · https://huggingface.co/datasets/anonymous-dianchi-2026/dianchi-water (CC BY 4.0, public)
-- **Suggested reviewers:** hydroinformatics / missing-data / automatic monitoring. Avoid physical oceanography of ECS fronts.
+## Cover letter rule
 
-## Checks already done
+Criterion + decision + software. No rejection history.
 
-- Word rebuilt from frozen CSVs (6 tables, 3 figures). Stale claim “persist/clim invariant to the mask” is gone; remaining “invariant” is “invariant by construction.”
-- Hugging Face Dianchi dataset is public under CC BY 4.0 (19.8% missing, 22 stations, 2022–2024).
-- 105-grid sensor winner is BRITS; recipe 0.421 vs 0.430 is not claimed as a finding.
-- Keep scan and paired bootstrap are in the Word Results.
+## Gate (passed)
 
-## Do not upload
-
-- `manuscript_draft.md` (working source, not IWA format)
-- Engine checkpoints, WOA NetCDFs, or Paper B
-- Any cover letter that mentions Water / HSJ / previous decisions
+ρ 15/15; warning CSI flip on sensor/station; ocean deploy table; claim is the certificate, not “we are not a new architecture.”
