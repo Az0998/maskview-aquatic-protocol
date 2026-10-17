@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite it as below."
+type: software
+title: "Mask-View interpolability certificate for lake water-quality imputation and early warning"
+authors:
+  - name: "Az0998"
+repository-code: "https://github.com/Az0998/maskview-aquatic-protocol"
+url: "https://az0998.github.io/maskview-aquatic-protocol/"
+license: MIT
