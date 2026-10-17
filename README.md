@@ -54,13 +54,11 @@ python scripts/build_cross_domain_tables.py
 python scripts/plot_pattern_bank.py
 python scripts/plot_rank_reversal.py
 python scripts/plot_keep_ratio_tax.py
-python scripts/plot_graphical_abstract.py
-python scripts/build_ems_docx.py
 ```
 
 目录：`data/frozen/` 冻结结果 · `scripts/` 出表出图 · `paper/` 投稿包 · `results/` 生成物。
 
-训练引擎若需重跑，见实验仓 `water-ai-do-forecast` / `ocean-do-forecast`；本仓是**论文开放合成与冻结证据**。
+训练引擎若需重跑，见实验仓 [dianchi-maskview-imputation](https://github.com/Az0998/dianchi-maskview-imputation) / [ocean-do-forecast](https://github.com/Az0998/ocean-do-forecast)；本仓是**论文开放合成与冻结证据**。
 
 ## License
 
